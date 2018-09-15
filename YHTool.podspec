@@ -29,10 +29,10 @@ TODO: 主要包含网络请求、自定义 view、扩展工具.
 
   s.ios.deployment_target = '9.0'
   
-  s.source_files = 'YHTool/Classes/**/*.{swift,h,m}'
+  s.source_files = 'Pod/Classes/**/**/*.{swift,h,m}'
   
   s.resource_bundles = {
-    'YHTool' => ['YHTool/Classes/*.xib']
+    'YHTool' => ['Pod/Classes/**/**/*.xib']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
