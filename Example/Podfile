@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YHTool_Example' do
+  pod 'YHTool', :path => '../'
+
+  target 'YHTool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
