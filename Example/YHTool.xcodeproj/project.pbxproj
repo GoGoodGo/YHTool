@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09E684B20D466859142C6806 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		09E684B20D466859142C6806 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		143CD76D75CAB1BB7EB6F6AF /* Pods_YHTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3991DCD9BC94E8BC009C9484 /* Pods-YHTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHTool_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHTool_Example/Pods-YHTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3EB48B257EB62A62C6DAB10B /* YHTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YHTool.podspec; path = ../YHTool.podspec; sourceTree = "<group>"; };
+		3EB48B257EB62A62C6DAB10B /* YHTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YHTool.podspec; path = ../YHTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		533814E3C6FADD7FA775E85D /* Pods-YHTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHTool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHTool_Tests/Pods-YHTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F0560A9DB028E269EF47823 /* Pods-YHTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHTool_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHTool_Tests/Pods-YHTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YHTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +44,7 @@
 		607FACE51AFB9204008FA782 /* YHTool_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHTool_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6125B41BAED204471161C02B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6125B41BAED204471161C02B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6C5C337A93E1E6D9038AC283 /* Pods-YHTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHTool_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHTool_Example/Pods-YHTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8724C7AFE1E391AF1C11297C /* Pods_YHTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */

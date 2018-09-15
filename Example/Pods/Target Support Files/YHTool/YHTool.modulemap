@@ -1,0 +1,6 @@
+framework module YHTool {
+  umbrella header "YHTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

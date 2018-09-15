@@ -1,0 +1,16 @@
+PODS:
+  - YHTool (0.1.0)
+
+DEPENDENCIES:
+  - YHTool (from `../`)
+
+EXTERNAL SOURCES:
+  YHTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YHTool: f3e2e0f881db5d746c79ae69a57e575fdba50aa6
+
+PODFILE CHECKSUM: 0b0a227a65d47c2972de480a07a88c5843afaaeb
+
+COCOAPODS: 1.5.3
