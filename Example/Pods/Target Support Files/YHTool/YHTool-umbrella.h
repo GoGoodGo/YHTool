@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "PullDownCell.h"
+#import "YHPullDownView.h"
+#import "YHScrollView.h"
 
 FOUNDATION_EXPORT double YHToolVersionNumber;
 FOUNDATION_EXPORT const unsigned char YHToolVersionString[];

@@ -22,7 +22,7 @@ pod 'YHTool'
 
 ## Author
 
-OYHHYO, 442371047@qq.com
+OYangHui, 442371047@qq.com
 
 ## License
 

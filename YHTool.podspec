@@ -21,23 +21,23 @@ Pod::Spec.new do |s|
 TODO: 主要包含网络请求、自定义 view、扩展工具.
                        DESC
 
-  s.homepage         = 'https://github.com/OYHHYO/YHTool'
+  s.homepage         = 'https://github.com/GoGoodGo/YHTool'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'OYHHYO' => '442371047@qq.com' }
-  s.source           = { :git => 'https://github.com/OYHHYO/YHTool.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'OYangHui' => '442371047@qq.com' }
+  s.source           = { :git => 'https://github.com/GoGoodGo/YHTool.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-
-  s.source_files = 'YHTool/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'YHTool' => ['YHTool/Assets/*.png']
-  # }
+  s.source_files = 'YHTool/Classes/**/*.{swift,h,m}'
+  
+  s.resource_bundles = {
+    'YHTool' => ['YHTool/Classes/**/*.xib']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  
+  s.frameworks = 'UIKit', 'Foundation'
   
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
