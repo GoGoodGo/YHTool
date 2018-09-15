@@ -2,7 +2,7 @@
   "name": "YHTool",
   "version": "0.1.1",
   "summary": "自定义的工具.",
-  "description": "TODO: 主要包含网络请求、自定义 view、扩展工具.",
+  "description": "主要包含网络请求、自定义 view、扩展工具.",
   "homepage": "https://github.com/GoGoodGo/YHTool",
   "license": {
     "type": "MIT",
@@ -15,14 +15,13 @@
     "git": "https://github.com/GoGoodGo/YHTool.git",
     "tag": "0.1.1"
   },
+  "swift_version": "4.1",
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "YHTool/Classes/**/*.{swift,h,m}",
   "resource_bundles": {
-    "YHTool": [
-      "YHTool/Classes/**/*.xib"
-    ]
+    "YHTool": "YHTool/Classes/**/*.xib"
   },
   "frameworks": [
     "UIKit",
