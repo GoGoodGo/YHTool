@@ -35,7 +35,7 @@ TODO: 主要包含网络请求、自定义 view、扩展工具.
     'YHTool' => ['YHTool/Classes/**/*.xib']
   }
 
-  s.public_header_files = 'YHTool/Classes/**/**/*.h'
+  s.public_header_files = 'YHTool/Classes/OCToolFile/*.h'
   
   s.frameworks = 'UIKit', 'Foundation'
   
