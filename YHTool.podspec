@@ -22,18 +22,16 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/GoGoodGo/YHTool'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'OYangHui' => '442371047@qq.com' }
   s.source           = { :git => 'https://github.com/GoGoodGo/YHTool.git', :tag => s.version.to_s }
 
+  s.swift_version = '4.1'
   s.ios.deployment_target = '9.0'
   
   s.source_files = 'YHTool/Classes/**/*.{swift,h,m}'
   
-  s.resource_bundles = {
-      'YHTool' => ['YHTool/Classes/**/*.xib']
-  }
+  s.resource_bundles = { 'YHTool' => 'YHTool/Classes/**/*.xib' }
 
   #s.public_header_files = 'YHTool/Classes/**/*.h'
   
