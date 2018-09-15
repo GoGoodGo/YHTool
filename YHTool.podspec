@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: 主要包含网络请求、自定义 view、扩展工具.
+  主要包含网络请求、自定义 view、扩展工具.
                        DESC
 
   s.homepage         = 'https://github.com/GoGoodGo/YHTool'
@@ -29,13 +29,13 @@ TODO: 主要包含网络请求、自定义 view、扩展工具.
 
   s.ios.deployment_target = '9.0'
   
-  s.source_files = 'YHTool/Classes/**/*.{swift,m}'
+  s.source_files = 'YHTool/Classes/**/*.{swift,h,m}'
   
   s.resource_bundles = {
-      'YHTool' => ['YHTool/Classes/*.{xib}']
+      'YHTool' => ['YHTool/Classes/**/*.xib']
   }
 
-  #s.public_header_files = 'YHTool/Classes/**/*.{h}'
+  #s.public_header_files = 'YHTool/Classes/**/*.h'
   
   s.frameworks = 'UIKit', 'Foundation'
   
