@@ -149,8 +149,9 @@ public class YHSegmentView: UIView, UICollectionViewDelegate, UICollectionViewDa
     private lazy var collectionView: UICollectionView = {
        
         let view = UICollectionView(frame: self.bounds, collectionViewLayout: self.layout)
-        let bundlePath = Bundle.main.path(forResource: "z02sckhd_6wQgx_Tool", ofType: "bundle")
-        view.register(UINib.init(nibName: String(describing: ItemCell.self), bundle: Bundle.init(path: bundlePath!)), forCellWithReuseIdentifier: String(describing: ItemCell.self))
+        let bundle = Bundle.init(for: type(of: self))
+        let url = bundle.url(forResource: "YHTool", withExtension: "bundle")
+        view.register(UINib.init(nibName: String(describing: ItemCell.self), bundle: Bundle.init(url: url!)), forCellWithReuseIdentifier: String(describing: ItemCell.self))
         view.backgroundColor = UIColor.white
         view.showsHorizontalScrollIndicator = false
         view.delegate = self

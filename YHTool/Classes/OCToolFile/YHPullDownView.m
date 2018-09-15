@@ -160,7 +160,9 @@ static const NSInteger _defaultRow = 4;
         _pullDownView.delegate = self;
         _pullDownView.showsVerticalScrollIndicator = NO;
         _pullDownView.backgroundColor = YHRGBColor(245, 245, 245);
-        [_pullDownView registerNib:[UINib nibWithNibName:NSStringFromClass([PullDownCell class]) bundle:nil] forCellReuseIdentifier:PullDownViewIdentifier];
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSURL *url = [bundle URLForResource:@"YHTool" withExtension:@"bundle"];
+        [_pullDownView registerNib:[UINib nibWithNibName:NSStringFromClass([PullDownCell class]) bundle:[NSBundle bundleWithURL:url]] forCellReuseIdentifier:PullDownViewIdentifier];
         _pullDownView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _pullDownView;

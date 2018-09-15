@@ -1,6 +1,6 @@
 {
   "name": "YHTool",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "summary": "自定义的工具.",
   "description": "主要包含网络请求、自定义 view、扩展工具.",
   "homepage": "https://github.com/GoGoodGo/YHTool",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/GoGoodGo/YHTool.git",
-    "tag": "0.1.1"
+    "tag": "1.0.0"
   },
   "swift_version": "4.1",
   "platforms": {
