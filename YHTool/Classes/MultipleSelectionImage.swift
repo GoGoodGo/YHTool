@@ -20,7 +20,7 @@ public class MultipleImage: NSObject {
     public var addPicCompletionBlock: ((_ getImgs: [UIImage]) -> Void)?
     var controller: UIViewController?
     
-    init(ctrl: UIViewController) {
+    public init(ctrl: UIViewController) {
         controller = ctrl
         super.init()
     }
