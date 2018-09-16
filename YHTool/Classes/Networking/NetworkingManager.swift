@@ -33,11 +33,11 @@ public class NetworkingManager: NSObject {
     }
     
     // MARK: - GET 请求 转换为模型
-    public class func getRequest<T: Mappable>(params: Dictionary<String, Any>?, success: @escaping (_ response: T) -> Void, failure: @escaping FailureBlock) {
+    public class func getRequest<T: Mappable>(baseUrl: String, params: Dictionary<String, Any>?, success: @escaping (_ response: T) -> Void, failure: @escaping FailureBlock) {
         
         let manager = Alamofire.SessionManager.default
         manager.session.configuration.timeoutIntervalForRequest = 10
-        Alamofire.request(BASE_URL, method: .get, parameters: params).validate().responseObject { (response: DataResponse<T>) in
+        Alamofire.request(baseUrl, method: .get, parameters: params).validate().responseObject { (response: DataResponse<T>) in
             guard response.result.isSuccess else {
                 failure(response.result.error)
                 return
@@ -49,11 +49,11 @@ public class NetworkingManager: NSObject {
     }
     
     // MARK: - GET 请求 转换为模型数组
-    public class func getRequestList<T: Mappable>(params: Dictionary<String, Any>?, success: @escaping (_ response: [T]) -> Void, failure: @escaping FailureBlock) {
+    public class func getRequestList<T: Mappable>(baseUrl: String, params: Dictionary<String, Any>?, success: @escaping (_ response: [T]) -> Void, failure: @escaping FailureBlock) {
         
         let manager = Alamofire.SessionManager.default
         manager.session.configuration.timeoutIntervalForRequest = 10
-        Alamofire.request(BASE_URL, method: .get, parameters: params).validate().responseArray { (response: DataResponse<[T]>) in
+        Alamofire.request(baseUrl, method: .get, parameters: params).validate().responseArray { (response: DataResponse<[T]>) in
             guard response.result.isSuccess else {
                 failure(response.result.error)
                 return
@@ -78,11 +78,11 @@ public class NetworkingManager: NSObject {
     }
     
     // MARK: - POST 请求 转换为模型
-    public class func postRequest<T: Mappable>(params: Dictionary<String, Any>?, success: @escaping (_ response: T) -> Void, failure: @escaping FailureBlock) {
+    public class func postRequest<T: Mappable>(baseUrl: String, params: Dictionary<String, Any>?, success: @escaping (_ response: T) -> Void, failure: @escaping FailureBlock) {
         
         let manager = Alamofire.SessionManager.default
         manager.session.configuration.timeoutIntervalForRequest = 10
-        Alamofire.request(BASE_URL, method: .post, parameters: params).validate().responseObject { (response: DataResponse<T>) in
+        Alamofire.request(baseUrl, method: .post, parameters: params).validate().responseObject { (response: DataResponse<T>) in
             guard response.result.isSuccess else {
                 failure(response.result.error)
                 return
@@ -94,9 +94,9 @@ public class NetworkingManager: NSObject {
     }
     
     // MARK: - POST 请求 转换为模型数组
-    public class func postRequestList<T: Mappable>(params: Dictionary<String, Any>?, success: @escaping (_ response: [T]) -> Void, failure: @escaping FailureBlock) {
+    public class func postRequestList<T: Mappable>(baseUrl: String, params: Dictionary<String, Any>?, success: @escaping (_ response: [T]) -> Void, failure: @escaping FailureBlock) {
         
-        Alamofire.request(BASE_URL, method: .post, parameters: params).validate().responseArray { (response: DataResponse<[T]>) in
+        Alamofire.request(baseUrl, method: .post, parameters: params).validate().responseArray { (response: DataResponse<[T]>) in
             guard response.result.isSuccess else {
                 failure(response.result.error)
                 return

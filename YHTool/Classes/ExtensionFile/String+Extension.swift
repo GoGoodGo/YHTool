@@ -13,9 +13,9 @@ extension String {
     
     /************************ 其他 **************************/
     // MARK: - 图片地址拼接
-    public func imgUrlAppend() -> String {
+    public func imgUrlAppend(url: String) -> String {
         
-        let totalUrl = IMG_URL + self
+        let totalUrl = url + self
         return totalUrl
     }
     

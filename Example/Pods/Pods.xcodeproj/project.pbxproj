@@ -108,6 +108,7 @@
 		80FBD965D6160B82CF4B55FB3409C1FD /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB1BF44AD0A5D809D0DB0AEAF995B2 /* Mappable.swift */; };
 		82B33F223516A2AA7DA2985E5A954B88 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE97FD1D1949D54CD970CDB331034DC /* ObjectMapper.framework */; };
 		834F4D9819C6010E611A7E151B8899C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A6C5E8424739D09C8CD041475124AE /* Foundation.framework */; };
+		8359657A214E689C00C2814A /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83596579214E689C00C2814A /* BaseModel.swift */; };
 		8458B492CB933033405C91CBEB1BCF55 /* Pods-YHTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0770DEC68AA05B05638BD0705B6CE13 /* Pods-YHTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8491440E494CAAAE6DB2EA1D8D215903 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19BACBA3C226E76FFACFC1DCC5CB1DB /* ImmutableMappable.swift */; };
 		84EE852444539B3621ADDE18AE47204E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A6C5E8424739D09C8CD041475124AE /* Foundation.framework */; };
@@ -430,6 +431,7 @@
 		7C1F3D3A57174E83CE6F3C50B53900E7 /* YHScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YHScrollView.h; sourceTree = "<group>"; };
 		7FCA1D64025A495E6B4385E56BCB0F93 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
 		8243F89AF9EB6E8DF3315E4C3D17EE28 /* AlamofireObjectMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireObjectMapper.swift; path = AlamofireObjectMapper/AlamofireObjectMapper.swift; sourceTree = "<group>"; };
+		83596579214E689C00C2814A /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		866E58AE54F0A9F7A285DCBC41CDF7AC /* YHTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YHTool-prefix.pch"; sourceTree = "<group>"; };
 		87DBE584AB7876BEC8591CD0CF41DB64 /* Pods-YHTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YHTool_Example-dummy.m"; sourceTree = "<group>"; };
 		87F4F32F5E0011BD6CF5278865470F03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -978,6 +980,7 @@
 		9F710B6B05A5371B582950720CEE8BCF /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				83596579214E689C00C2814A /* BaseModel.swift */,
 				E67D895852E5BBDFB55A02DA842090ED /* NetworkingManager.swift */,
 				37085DB1BC5CB90CA99704253F76831D /* NetworkingManager+Extension.swift */,
 			);
@@ -1680,6 +1683,7 @@
 				639F4095B8AFA2F5FA2D0F36D8F3455F /* PullDownCell.m in Sources */,
 				3067683E7C200EF374A8DE247840E04D /* Singleton.swift in Sources */,
 				107F856C3C8D92319C3DE5D9698CE4F9 /* String+Extension.swift in Sources */,
+				8359657A214E689C00C2814A /* BaseModel.swift in Sources */,
 				3B74602CEB262DC993D084317D83F7DB /* UIBarButtonItem+Extension.swift in Sources */,
 				BB0B5B20BA758FBE7C6AF9846330D97F /* UIImage+Extension.swift in Sources */,
 				C9DF346EAE79E621A856F6BA10393402 /* UIView+Extension.swift in Sources */,

@@ -96,11 +96,7 @@ public let IMG: (String) -> UIImage? = { imgName in
 }
 
 // 命名空间
-public let NameSpace: (String) -> String = { name in
-    
-    let bundle = 
-}
-//public let NameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String + "."
+public let NameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String + "."
 
 // 提示框显示时间
 public let hudHiddenTime = 0.8
