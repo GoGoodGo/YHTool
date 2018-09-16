@@ -46,7 +46,7 @@ extension UIImage {
         return image!
     }
     /** 获取二维码 */
-    static func getQRCode(info: String) -> UIImage {
+    static public func getQRCode(info: String) -> UIImage {
         
         let filter = CIFilter.init(name: info)
         filter?.setDefaults()

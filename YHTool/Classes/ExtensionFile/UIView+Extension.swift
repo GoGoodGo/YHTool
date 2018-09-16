@@ -35,7 +35,7 @@ extension UIView {
     }
     
     // MARK: - X
-    var x: CGFloat {
+    public var x: CGFloat {
         get {
             return frame.origin.x
         }
@@ -47,7 +47,7 @@ extension UIView {
     }
     
     // MARK: - Y
-    var y: CGFloat {
+    public var y: CGFloat {
         get {
             return frame.origin.y
         }
@@ -59,7 +59,7 @@ extension UIView {
     }
     
     // MARK: - Width
-    var width: CGFloat {
+    public var width: CGFloat {
         get {
             return frame.size.width
         }
@@ -71,7 +71,7 @@ extension UIView {
     }
     
     // MARK: - Height
-    var height: CGFloat {
+    public var height: CGFloat {
         get {
             return frame.size.height
         }
@@ -83,7 +83,7 @@ extension UIView {
     }
     
     // MARK: - centerX
-    var centerX: CGFloat {
+    public var centerX: CGFloat {
         
         get {
             return center.x
@@ -96,7 +96,7 @@ extension UIView {
     }
     
     // MARK: - centerY
-    var centerY: CGFloat {
+    public var centerY: CGFloat {
         
         get {
             return center.y
