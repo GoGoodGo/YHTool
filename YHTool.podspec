@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHTool'
-  s.version          = '1.1.2'
+  s.version          = '1.1.3'
   s.summary          = 'Custom Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,9 @@ Pod::Spec.new do |s|
   
   s.source_files = 'YHTool/Classes/**/*.{swift,h,m}'
   
-  s.resource_bundles = { 'YHTool' => 'YHTool/Classes/**/*.xib' }
+  s.resource_bundles = {
+      'YHTool' => ['YHTool/Classes/**/*.xib', 'YHTool/Assets/*.png']
+  }
   
   #s.public_header_files = 'YHTool/Classes/**/*.h'
   
