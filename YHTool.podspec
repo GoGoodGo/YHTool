@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YHTool'
   s.version          = '1.1.1'
-  s.summary          = '自定义的工具.'
+  s.summary          = 'Custom Tool.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  主要包含网络请求、自定义 view、扩展工具.
+  Alamofire, Custom view, Extension, Multi-select picture.
                        DESC
 
   s.homepage         = 'https://github.com/GoGoodGo/YHTool'
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.source_files = 'YHTool/Classes/**/*.{swift,h,m}'
   
   s.resource_bundles = { 'YHTool' => 'YHTool/Classes/**/*.xib' }
-
+  
   #s.public_header_files = 'YHTool/Classes/**/*.h'
   
   s.frameworks = 'UIKit', 'Foundation'

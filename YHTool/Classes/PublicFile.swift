@@ -96,7 +96,23 @@ public let IMG: (String) -> UIImage? = { imgName in
 }
 
 // 命名空间
-public let NameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String + "."
+public let NameSpace = Bundle.main.infoDictionary!["CFBundleName"] as! String + "."
+
+/** 获取 bundle */
+public let getBundle: (AnyClass) -> Bundle = { any in
+    
+    let bundle = Bundle.init(for: any)
+    let url = bundle.url(forResource: (bundle.infoDictionary?["CFBundleName"] as! String), withExtension: "bundle")
+    return Bundle.init(url: url!)!
+}
+/** 获取 bundle by bundle name */
+public let getBundleWithName: (AnyClass, String) -> Bundle = { any, name in
+    
+    let bundle = Bundle.init(for: any)
+    let url = bundle.url(forResource: name, withExtension: "bundle")
+    return Bundle.init(url: url!)!
+}
+
 
 // 提示框显示时间
 public let hudHiddenTime = 0.8

@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         view.addSubview(segmentView)
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let image = UIImage.bundleImage(name: "")
+    }
+    
     
 
 }
