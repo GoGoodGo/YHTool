@@ -18,11 +18,16 @@ class ViewController: UIViewController {
     
         let segmentView = YHSegmentView.init(frame: CGRect.init(x: 0, y: 50, width: WIDTH, height: 50), titles: ["哈哈", "哈哈哈哈哈", "测试"])
         view.addSubview(segmentView)
+        
+        navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem.itemBundle(bundle: getBundle(Singleton.self), image: "back", target: self, action: #selector(search))
+    }
+    
+    @objc func search() {
+        print("click back")
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        let image = UIImage.bundleImage(name: "")
     }
     
     
