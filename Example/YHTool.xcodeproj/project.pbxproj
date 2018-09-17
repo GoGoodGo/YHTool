@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		7CDD8F08214FABCD000149A9 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD8F06214FABCD000149A9 /* SecondController.swift */; };
+		7CDD8F09214FABCD000149A9 /* SecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDD8F07214FABCD000149A9 /* SecondController.xib */; };
 		DE206840C368697B7C19B947 /* Pods_YHTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143CD76D75CAB1BB7EB6F6AF /* Pods_YHTool_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6125B41BAED204471161C02B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6C5C337A93E1E6D9038AC283 /* Pods-YHTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHTool_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHTool_Example/Pods-YHTool_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7CDD8F06214FABCD000149A9 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		7CDD8F07214FABCD000149A9 /* SecondController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondController.xib; sourceTree = "<group>"; };
 		8724C7AFE1E391AF1C11297C /* Pods_YHTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				7CDD8F06214FABCD000149A9 /* SecondController.swift */,
+				7CDD8F07214FABCD000149A9 /* SecondController.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -248,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				7CDD8F09214FABCD000149A9 /* SecondController.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -338,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDD8F08214FABCD000149A9 /* SecondController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
