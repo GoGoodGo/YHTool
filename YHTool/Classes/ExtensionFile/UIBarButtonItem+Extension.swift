@@ -26,7 +26,7 @@ extension UIBarButtonItem {
             btn.setImage(UIImage.bundleImage(bundle: bundle, name: highlightName), for: .highlighted)
         }
         var frame = btn.frame
-        frame.size.width = (btn.currentImage?.size.width) ?? 0 + (NSString.init(string: title ?? "").size(withAttributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]).width) + 20
+        frame.size.width = (btn.currentImage?.size.width) ?? 0 + (NSString.init(string: title ?? "").size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)]).width) + 20
         frame.size.height = (btn.currentImage?.size.height) ?? 44
         btn.frame = frame
         
@@ -46,7 +46,7 @@ extension UIBarButtonItem {
         btn.setImage(UIImage.init(named: highligtImage ?? ""), for: .highlighted)
         
         var frame = btn.frame
-        frame.size.width = (btn.currentImage?.size.width) ?? 0 + (NSString.init(string: title ?? "").size(withAttributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)]).width) + 20
+        frame.size.width = (btn.currentImage?.size.width) ?? 0 + (NSString.init(string: title ?? "").size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)]).width) + 20
         frame.size.height = (btn.currentImage?.size.height) ?? 44
         btn.frame = frame
         

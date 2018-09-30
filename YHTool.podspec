@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHTool'
-  s.version          = '1.1.4'
+  s.version          = '1.1.5'
   s.summary          = 'Custom Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.author           = { 'OYangHui' => '442371047@qq.com' }
   s.source           = { :git => 'https://github.com/GoGoodGo/YHTool.git', :tag => s.version.to_s }
 
-  s.swift_version = '4.1'
+  s.swift_version = '4.2'
   s.ios.deployment_target = '9.0'
   
   s.source_files = 'YHTool/Classes/**/*.{swift,h,m}'

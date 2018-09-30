@@ -17,7 +17,7 @@ YHTool is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'YHTool', '~> 1.1.4'
+pod 'YHTool', '~> 1.1.5'
 ```
 
 ## Author

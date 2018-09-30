@@ -33,10 +33,10 @@ public class MultipleImage: NSObject {
             let status = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
             if status == .restricted || status == .denied {
                 controller?.alertViewCtrl(title: "提示", message: "您尚未开启相机权限", sureTitle: "去开启", sureHandler: { (action) in
-                    let url = URL.init(string: UIApplicationOpenSettingsURLString)
+                    let url = URL.init(string: UIApplication.openSettingsURLString)
                     if UIApplication.shared.canOpenURL(url!) {
                         if #available(iOS 10.0, *) {
-                            UIApplication.shared.open(URL.init(string: "prefs:root=Privacy&path=CAMERA")!, options: [:], completionHandler: nil)
+                            UIApplication.shared.open(URL.init(string: "prefs:root=Privacy&path=CAMERA")!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
                         } else {
                             UIApplication.shared.openURL(URL.init(string: "prefs:root=Privacy&path=CAMERA")!)
                         }
@@ -152,7 +152,10 @@ extension MultipleImage: QBImagePickerControllerDelegate, UIImagePickerControlle
     }
     
     // MARK: - UIImagePickerControllerDelegate
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
         let image = info["UIImagePickerControllerOriginalImage"] as! UIImage
         let zoomImg = image.zoomedImage(width: 400)
         if let getPicBlock = self.addPicCompletionBlock {
@@ -183,3 +186,13 @@ extension MultipleImage: QBImagePickerControllerDelegate, UIImagePickerControlle
 
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
+}

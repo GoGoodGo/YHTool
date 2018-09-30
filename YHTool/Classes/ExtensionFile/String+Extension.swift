@@ -45,7 +45,7 @@ extension String {
     // MARK: - 计算文本的 Size
     public func textSize(font: UIFont, maxSize: CGSize) -> CGSize {
         
-        var newSize = NSString.init(string: self).boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : font], context: nil).size
+        var newSize = NSString.init(string: self).boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font : font], context: nil).size
         
         newSize.width += 4
         
@@ -60,7 +60,7 @@ extension String {
         
         let attributeStr = NSMutableAttributedString.init(string: self)
         
-        attributeStr.addAttributes([NSAttributedStringKey.baselineOffset : 0, NSAttributedStringKey.strikethroughStyle : 1, NSAttributedStringKey.foregroundColor : UIColor.lightGray], range: range)
+        attributeStr.addAttributes([NSAttributedString.Key.baselineOffset : 0, NSAttributedString.Key.strikethroughStyle : 1, NSAttributedString.Key.foregroundColor : UIColor.lightGray], range: range)
         
         return attributeStr
     }

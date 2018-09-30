@@ -17,7 +17,7 @@ public class YHTextView: UITextView {
     required public init?(coder aDecoder: NSCoder) {
         placeholderColor = YHRGBColor(200, 200, 205)
         super.init(coder: aDecoder)
-        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: NSNotification.Name.UITextViewTextDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: UITextView.textDidChangeNotification, object: nil)
     }
     
     override public func draw(_ rect: CGRect) {
@@ -29,7 +29,7 @@ public class YHTextView: UITextView {
         tempRect.origin.y = 7
         tempRect.size.width -= 2 * tempRect.origin.x
         
-        let attrs = [NSAttributedStringKey.font : font ?? UIFont.systemFont(ofSize: 14), NSAttributedStringKey.foregroundColor : placeholderColor] as [NSAttributedStringKey : Any]
+        let attrs = [NSAttributedString.Key.font : font ?? UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor : placeholderColor] as [NSAttributedString.Key : Any]
         placeholder?.draw(in: tempRect, withAttributes: attrs)
     }
     
