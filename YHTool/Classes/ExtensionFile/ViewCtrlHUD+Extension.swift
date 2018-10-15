@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import MBProgressHUD
 
-let HUDMinShowTime: Float = 0.4
+let HUDMinShowTime: TimeInterval = 0.4
 
 extension UIViewController {
     
@@ -18,7 +18,7 @@ extension UIViewController {
     // MARK: - show -> view 
     public func showHUD(view: UIView? = UIApplication.shared.windows.last) {
         var hud = MBProgressHUD.init()
-        hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud = MBProgressHUD.showAdded(to: view!, animated: true)
         hud.mode = .determinate
         hud.minShowTime = HUDMinShowTime
         hud.removeFromSuperViewOnHide = true
@@ -26,36 +26,36 @@ extension UIViewController {
     
     // MARK: - hide -> view
     public func hideHUD(view: UIView? = UIApplication.shared.windows.last) {
-        MBProgressHUD.hide(for: view, animated: true)
+        MBProgressHUD.hide(for: view!, animated: true)
     }
     
     // MARK: - hide all view
     public func hideAllHUD(view: UIView? = UIApplication.shared.windows.last) {
-        MBProgressHUD.hideAllHUDs(for: view, animated: true)
+        MBProgressHUD.hideAllHUDs(for: view!, animated: true)
     }
     
     // MARK: - showAutoHideHUD
     public func showAutoHideHUD(message: String, toView view: UIView? = UIApplication.shared.windows.last) {
         
         var hud = MBProgressHUD.init()
-        hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud = MBProgressHUD.showAdded(to: view!, animated: true)
         hud.mode = .text
-        hud.labelText = message
+        hud.label.text = message
         hud.removeFromSuperViewOnHide = true
         
-        hud.hide(true, afterDelay: hudHiddenTime)
+        hud.hide(animated: true, afterDelay: hudHiddenTime)
     }
     
     // MARK: - 自动隐藏 + completedHandler
     public func showAutoHideHUD(message: String, toView view: UIView? = UIApplication.shared.windows.last, completed: @escaping () -> Void) {
         
         var hud = MBProgressHUD.init()
-        hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud = MBProgressHUD.showAdded(to: view!, animated: true)
         hud.mode = .text
-        hud.labelText = message
+        hud.label.text = message
         hud.removeFromSuperViewOnHide = true
         
-        hud.hide(true, afterDelay: hudHiddenTime)
+        hud.hide(animated: true, afterDelay: hudHiddenTime)
         
         let delayTime = DispatchTime.now() + hudHiddenTime
         DispatchQueue.main.asyncAfter(deadline: delayTime) { 

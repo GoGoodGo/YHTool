@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHTool'
-  s.version          = '1.1.5'
+  s.version          = '1.1.6'
   s.summary          = 'Custom Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -41,11 +41,11 @@ Pod::Spec.new do |s|
   
   s.dependency 'Alamofire'
   s.dependency 'SwiftyJSON'
-  s.dependency 'ObjectMapper', '~> 3.3'
-  s.dependency 'AlamofireObjectMapper', '~> 5.0'
-  s.dependency 'MBProgressHUD', '~> 0.9.2'
+  s.dependency 'ObjectMapper'
+  s.dependency 'AlamofireObjectMapper'
+  s.dependency 'MBProgressHUD'
   s.dependency 'QBImagePickerController'
-  s.dependency 'SDWebImage', '~>  3.8.0'
+  s.dependency 'SDWebImage'
   
   
 end
