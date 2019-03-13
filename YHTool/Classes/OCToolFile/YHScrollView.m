@@ -309,6 +309,7 @@ static NSTimeInterval fullScreenInterval = 0.2f;
         }
     }
     self.pageControl.currentPage = currentPage;
+    _currentImgIndex = currentPage;
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
