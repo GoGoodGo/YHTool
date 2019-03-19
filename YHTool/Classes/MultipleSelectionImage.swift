@@ -35,11 +35,12 @@ public class MultipleImage: NSObject {
                 controller?.alertViewCtrl(title: "提示", message: "您尚未开启相机权限", sureTitle: "去开启", sureHandler: { (action) in
                     let url = URL.init(string: UIApplication.openSettingsURLString)
                     if UIApplication.shared.canOpenURL(url!) {
-                        if #available(iOS 10.0, *) {
-                            UIApplication.shared.open(URL.init(string: "prefs:root=Privacy&path=CAMERA")!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
-                        } else {
-                            UIApplication.shared.openURL(URL.init(string: "prefs:root=Privacy&path=CAMERA")!)
-                        }
+                        UIApplication.shared.openURL(url!)
+//                        if #available(iOS 10.0, *) {
+//                            UIApplication.shared.open(URL.init(string: "prefs:root=Privacy&path=CAMERA")!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
+//                        } else {
+//                            UIApplication.shared.openURL(URL.init(string: "prefs:root=Privacy&path=CAMERA")!)
+//                        }
                     }
                 }, cancelHandler: nil)
             } else {
