@@ -36,11 +36,6 @@ public class MultipleImage: NSObject {
                     let url = URL.init(string: UIApplication.openSettingsURLString)
                     if UIApplication.shared.canOpenURL(url!) {
                         UIApplication.shared.openURL(url!)
-//                        if #available(iOS 10.0, *) {
-//                            UIApplication.shared.open(URL.init(string: "prefs:root=Privacy&path=CAMERA")!, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
-//                        } else {
-//                            UIApplication.shared.openURL(URL.init(string: "prefs:root=Privacy&path=CAMERA")!)
-//                        }
                     }
                 }, cancelHandler: nil)
             } else {
