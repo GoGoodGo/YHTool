@@ -83,11 +83,19 @@ public let HexString: (String) -> UIColor = { hexStr in
 // HexColor
 public let HexRGB: (UInt64) -> UIColor = { RGBValue in
     
-    return UIColor.init(red: ((CGFloat)((RGBValue & 0xFF0000) >> 16)) / 255.0, green: ((CGFloat)((RGBValue & 0xFF00) >> 8)) / 255.0, blue: ((CGFloat)(RGBValue & 0xFF)) / 255.0, alpha: 1.0)
+    let red = ((CGFloat)((RGBValue & 0xFF0000) >> 16)) / 255.0
+    let green = ((CGFloat)((RGBValue & 0xFF00) >> 8)) / 255.0
+    let blue = ((CGFloat)(RGBValue & 0xFF)) / 255.0
+    
+    return UIColor.init(red: red, green: green, blue: blue, alpha: 1.0)
 }
 public let HexRGBA: (UInt64, CGFloat) -> UIColor = { RGBValue, Alpha in
     
-    return UIColor.init(red: ((CGFloat)((RGBValue & 0xFF0000) >> 16)) / 255.0, green: ((CGFloat)((RGBValue & 0xFF00) >> 8)) / 255.0, blue: ((CGFloat)(RGBValue & 0xFF)) / 255.0, alpha: Alpha)
+    let red = ((CGFloat)((RGBValue & 0xFF0000) >> 16)) / 255.0
+    let green = ((CGFloat)((RGBValue & 0xFF00) >> 8)) / 255.0
+    let blue = ((CGFloat)(RGBValue & 0xFF)) / 255.0
+    
+    return UIColor.init(red: red, green: green, blue: blue, alpha: Alpha)
 }
 // 图片
 public let IMG: (String) -> UIImage? = { imgName in
