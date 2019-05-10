@@ -10,7 +10,7 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SwiftyJSON (4.1.0)
-  - YHTool (1.1.5):
+  - YHTool (1.2.1):
     - Alamofire
     - AlamofireObjectMapper
     - MBProgressHUD
@@ -44,8 +44,8 @@ SPEC CHECKSUMS:
   QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
-  YHTool: 4606c8478cbca112eacbdcbfe76f414a8bc3f117
+  YHTool: 670b47720e69d83305b962e2130ebf292863837f
 
 PODFILE CHECKSUM: 0b0a227a65d47c2972de480a07a88c5843afaaeb
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

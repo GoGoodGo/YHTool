@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.cyan
-    
+        
         let segmentView = YHSegmentView.init(frame: CGRect.init(x: 0, y: 50, width: WIDTH, height: 50), titles: ["哈哈", "哈哈哈哈哈", "测试"])
         view.addSubview(segmentView)
         
